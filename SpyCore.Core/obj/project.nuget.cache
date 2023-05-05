@@ -1,12 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "w6Xw5fw4drRndjqlzi5hLn3HM/DncZLhz8R4QwlC6EkntgrVn1Vzy5vlfvwhvljU4aonL6x0S9atwWbiKd4iOw==",
+  "dgSpecHash": "fFIA5DxLDttYPP9Ol784wndnnk5ldD6ZcxIzMTP7nH/Zb65ruGlmxtpbN2zwzKhPQLrE9yU1/awZrTaF1baHrw==",
   "success": true,
-  "projectFilePath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
+  "projectFilePath": "D:\\examples\\c#\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\wh7rb7\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\main\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\main\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\main\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\main\\.nuget\\packages\\telerikwincompositeui\\2012.1.321.20\\telerikwincompositeui.2012.1.321.20.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'TelerikWinCompositeUI 2012.1.321.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "TelerikWinCompositeUI",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

@@ -10,7 +10,7 @@
     mc:Ignorable="d"
     d:DesignHeight="450" d:DesignWidth="800">
     <Page.Resources>
-      <!--  <local:ResultCollection x:Key="scanResults"/>-->
+        <!--  <local:ResultCollection x:Key="scanResults"/>-->
     </Page.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -33,10 +33,10 @@
                 <RowDefinition Height="16*"/>
                 <RowDefinition Height="185*"/>
             </Grid.RowDefinitions>
-            <Label Content="File to Scan:" HorizontalAlignment="Left" Margin="14,0,0,0" VerticalAlignment="Center"/>
-            <TextBox x:Name="fileLocation" HorizontalAlignment="Left" Margin="86,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="443"/>
-            <Button x:Name="button2" Content="Select" HorizontalAlignment="Left" Margin="533,0,0,0" VerticalAlignment="Center" Width="99" Click="button2_Click_1"/>
-            <Button x:Name="button1" Content="Scan" HorizontalAlignment="Left" Margin="636,0,0,0" VerticalAlignment="Center" Width="99" Click="button1_Click"/>
+            <Label Content="Skanirlemek üçin faýl:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+            <TextBox x:Name="fileLocation" HorizontalAlignment="Left" Margin="139,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="390"/>
+            <Button x:Name="button2" Content="Saýlamak" HorizontalAlignment="Left" Margin="533,0,0,0" VerticalAlignment="Center" Width="99" Click="button2_Click_1"/>
+            <Button x:Name="button1" Content="Skanirlemek" HorizontalAlignment="Left" Margin="636,0,0,0" VerticalAlignment="Center" Width="99" Click="button1_Click"/>
 
             <DataGrid x:Name="resultView" Grid.Row="1" Margin="0,0,3,0"/>
             <DataGrid x:Name="threatView" Grid.Row="1" Margin="752,0,-2,0" RenderTransformOrigin="0.5,0.5">

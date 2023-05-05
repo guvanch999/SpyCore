@@ -37,10 +37,10 @@
                 <RowDefinition Height="96*"/>
                 <RowDefinition Height="88*"/>
             </Grid.RowDefinitions>
-            <Label Content="File to Scan:" HorizontalAlignment="Left" Margin="14,0,0,0" VerticalAlignment="Center" Height="26" Width="73"/>
-            <TextBox x:Name="filePath_textbox" HorizontalAlignment="Left" Margin="86,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="443" Height="26" Grid.ColumnSpan="2"/>
-            <Button x:Name="button2" Content="Select" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Width="99" Click="pictureBox2_Click" Height="28" Grid.Column="1"/>
-            <Button x:Name="button1" Content="Scan" HorizontalAlignment="Left" Margin="273,0,0,0" VerticalAlignment="Center" Click="scan_button_Click" Width="99" Height="28" Grid.Column="1"/>
+            <Label Content="Skanirlemek üçin faýl:" HorizontalAlignment="Left" Margin="14,0,0,0" VerticalAlignment="Center" Height="26" Width="130"/>
+            <TextBox x:Name="filePath_textbox" HorizontalAlignment="Left" Margin="149,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="380" Height="26" Grid.ColumnSpan="2"/>
+            <Button x:Name="button2" Content="Saýlamak" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Width="99" Click="pictureBox2_Click" Height="28" Grid.Column="1"/>
+            <Button x:Name="button1" Content="Skanirlemek" HorizontalAlignment="Left" Margin="273,0,0,0" VerticalAlignment="Center" Click="scan_button_Click" Width="99" Height="28" Grid.Column="1"/>
             <Grid Grid.Row="1" Margin="0,0,5,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="94*"/>
@@ -53,36 +53,40 @@
                     <RowDefinition Height="33*"/>
                     <RowDefinition Height="31*"/>
                 </Grid.RowDefinitions>
-                <Label Content="Filename:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Margin="0,28,0,0"/>
+                <Label Content="Faýl ady:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Margin="0,28,0,0"/>
                 <Label Content="MD5:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Margin="0,61,0,0" Grid.RowSpan="2"/>
                 <Label Content="SHA1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Height="32" Width="76" Grid.Row="2"/>
                 <Label Content="SHA256:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Height="32" Width="76" Grid.Row="3"/>
-                <Label Content="Size:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Grid.Row="3" Margin="11,32,0,0" Grid.RowSpan="2"/>
+                <Label Content="Göwrüm:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Grid.Row="3" Margin="11,32,0,0" Grid.RowSpan="2"/>
                 <TextBox x:Name="fileName_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Height="26" Margin="0,32,0,0"/>
                 <TextBox x:Name="MD5_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="1" Height="26"/>
                 <TextBox x:Name="SHA1_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="2" Height="26"/>
                 <TextBox x:Name="SHA256_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="3" Height="26"/>
                 <TextBox x:Name="size_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="4" Height="26"/>
-                <Label Content="File Information" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="45,-4,0,0" Grid.Column="1"/>
+                <Label Content="Faýl maglumatlary" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="45,-4,0,0" Grid.Column="1"/>
 
             </Grid>
             <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,5,0">
-                <Label Content="Results" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="8,-2,0,0"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="72*"/>
+                    <ColumnDefinition Width="53*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Netije" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="8,-2,0,0"/>
                 <Rectangle HorizontalAlignment="Left" Height="16" Margin="82,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="Red"/>
-                <Rectangle HorizontalAlignment="Left" Height="16" Margin="182,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF1601AF"/>
-                <Rectangle HorizontalAlignment="Left" Height="16" Margin="249,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF9A9A9A"/>
-                <Label Content="Malicious" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="81" Margin="100,0,0,0"/>
-                <Label Content="Safe" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="40" Margin="200,0,0,0"/>
-                <Label Content="Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="268,1,0,0"/>
-                <lvc:PieChart x:Name="pieChart1" Series="{Binding Series}" Margin="76,42,3,-130" />
+                <Rectangle HorizontalAlignment="Left" Height="16" Margin="168,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF1601AF" RenderTransformOrigin="-0.726,0.686"/>
+                <Rectangle HorizontalAlignment="Left" Height="16" Margin="48,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF9A9A9A" Grid.Column="1"/>
+                <Label Content="Zyýanly" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="81" Margin="100,0,0,0"/>
+                <Label Content="Howpsuz" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="75" Margin="189,0,0,0" Grid.ColumnSpan="2"/>
+                <Label Content="Näbelli" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="113" Margin="69,1,0,0" Grid.Column="1"/>
+                <lvc:PieChart x:Name="pieChart1" Series="{Binding Series}" Margin="76,42,3,-130" Grid.ColumnSpan="2" />
                 <Label Content="Results" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="-316,197,0,0"/>
             </Grid>
             <Rectangle HorizontalAlignment="Left" Height="16" Margin="59,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="Red" Grid.Row="2"/>
-            <Label x:Name="malPercent" Content="Malicious" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="136" Margin="79,40,0,0" Grid.Row="2"/>
+            <Label x:Name="malPercent" Content="Zyýanly" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="136" Margin="79,40,0,0" Grid.Row="2"/>
             <Rectangle HorizontalAlignment="Left" Height="16" Margin="57,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF1601AF" Grid.Row="2"/>
-            <Label x:Name="safePercent" Content="Safe" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="83,82,0,0" Grid.Row="2"/>
+            <Label x:Name="safePercent" Content="Howpsuz" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="83,82,0,0" Grid.Row="2"/>
             <Rectangle HorizontalAlignment="Left" Height="16" Margin="58,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF9A9A9A" Grid.Row="2"/>
-            <Label x:Name="unkPercent" Content="Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="84,123,0,0" Grid.Row="2"/>
+            <Label x:Name="unkPercent" Content="Näbelli" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="84,123,0,0" Grid.Row="2"/>
             <!--
             The Mahapps Gray10 color represents where you should place your content.
             Place your content here.

@@ -29,10 +29,41 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "TelerikWinCompositeUI/2012.1.321.20": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.Practices.CompositeUI.WinForms.dll": {},
+          "lib/Microsoft.Practices.CompositeUI.dll": {},
+          "lib/Microsoft.Practices.ObjectBuilder.dll": {},
+          "lib/Telerik.WinControls.CompositeUI.dll": {},
+          "lib/Telerik.WinControls.GridView.dll": {},
+          "lib/Telerik.WinControls.RadChart.dll": {},
+          "lib/Telerik.WinControls.RadDock.dll": {},
+          "lib/Telerik.WinControls.UI.dll": {},
+          "lib/Telerik.WinControls.dll": {},
+          "lib/TelerikCommon.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.Practices.CompositeUI.WinForms.dll": {},
+          "lib/Microsoft.Practices.CompositeUI.dll": {},
+          "lib/Microsoft.Practices.ObjectBuilder.dll": {},
+          "lib/Telerik.WinControls.CompositeUI.dll": {},
+          "lib/Telerik.WinControls.GridView.dll": {},
+          "lib/Telerik.WinControls.RadChart.dll": {},
+          "lib/Telerik.WinControls.RadDock.dll": {},
+          "lib/Telerik.WinControls.UI.dll": {},
+          "lib/Telerik.WinControls.dll": {},
+          "lib/TelerikCommon.dll": {}
         }
       }
     }
@@ -207,47 +238,57 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "TelerikWinCompositeUI/2012.1.321.20": {
+      "sha512": "sAlpe0fsb2R2Gpz4FQvn7wIhRoTJNiZ6VBBl/n8wtoNL9TaXTAnOQdTwGx3SVQlfvRqVFnWW63LJQpUlcxvv7A==",
+      "type": "package",
+      "path": "telerikwincompositeui/2012.1.321.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.Practices.CompositeUI.WinForms.dll",
+        "lib/Microsoft.Practices.CompositeUI.dll",
+        "lib/Microsoft.Practices.ObjectBuilder.dll",
+        "lib/Telerik.WinControls.CompositeUI.dll",
+        "lib/Telerik.WinControls.GridView.dll",
+        "lib/Telerik.WinControls.RadChart.dll",
+        "lib/Telerik.WinControls.RadDock.dll",
+        "lib/Telerik.WinControls.UI.dll",
+        "lib/Telerik.WinControls.dll",
+        "lib/TelerikCommon.dll",
+        "telerikwincompositeui.2012.1.321.20.nupkg.sha512",
+        "telerikwincompositeui.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "TelerikWinCompositeUI >= 2012.1.321.20"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wh7rb7\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\main\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
+      "projectUniqueName": "D:\\examples\\c#\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
       "projectName": "SpyCore.Core",
-      "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
-      "packagesPath": "C:\\Users\\wh7rb7\\.nuget\\packages\\",
-      "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\obj\\",
+      "projectPath": "D:\\examples\\c#\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
+      "packagesPath": "C:\\Users\\main\\.nuget\\packages\\",
+      "outputPath": "D:\\examples\\c#\\SpyCore\\SpyCore.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\wh7rb7\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WinForms.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+        "C:\\Users\\main\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -275,6 +316,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "TelerikWinCompositeUI": {
+            "target": "Package",
+            "version": "[2012.1.321.20, )"
           }
         },
         "imports": [
@@ -283,12 +328,25 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'TelerikWinCompositeUI 2012.1.321.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "TelerikWinCompositeUI",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

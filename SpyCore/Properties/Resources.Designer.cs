@@ -80,7 +80,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Main.
+        ///   Looks up a localized string similar to Esasy.
         /// </summary>
         public static string MainPageTitle {
             get {
@@ -99,7 +99,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings page placeholder text.  Your app description goes here..
+        ///   Looks up a localized string similar to Sazlamalar sahypasynyň eýesiniň teksti. Programmaňyzyň beýany şu ýere gidýär..
         /// </summary>
         public static string SettingsPageAboutText {
             get {
@@ -108,7 +108,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to About this application.
+        ///   Looks up a localized string similar to Bu programma barada.
         /// </summary>
         public static string SettingsPageAboutTitle {
             get {
@@ -117,7 +117,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose Theme.
+        ///   Looks up a localized string similar to Tema saýlaň.
         /// </summary>
         public static string SettingsPageChooseThemeText {
             get {
@@ -126,7 +126,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Personalization.
+        ///   Looks up a localized string similar to Şahsylaşdyrma.
         /// </summary>
         public static string SettingsPagePersonalizationTitle {
             get {
@@ -135,7 +135,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Privacy Statement.
+        ///   Looks up a localized string similar to Gizlinlik Beýannamasy.
         /// </summary>
         public static string SettingsPagePrivacyStatementText {
             get {
@@ -144,7 +144,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dark.
+        ///   Looks up a localized string similar to Garaňky.
         /// </summary>
         public static string SettingsPageRadioButtonDarkTheme {
             get {
@@ -153,7 +153,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Light.
+        ///   Looks up a localized string similar to Ýagty.
         /// </summary>
         public static string SettingsPageRadioButtonLightTheme {
             get {
@@ -162,7 +162,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Default.
+        ///   Looks up a localized string similar to Bellenen.
         /// </summary>
         public static string SettingsPageRadioButtonWindowsDefaultTheme {
             get {
@@ -171,7 +171,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to Sazlamalar.
         /// </summary>
         public static string SettingsPageTitle {
             get {
@@ -180,7 +180,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Community.
+        ///   Looks up a localized string similar to Bileleşik.
         /// </summary>
         public static string ShellCommunityPage {
             get {
@@ -189,7 +189,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Go back.
+        ///   Looks up a localized string similar to Yzyňa dolan.
         /// </summary>
         public static string ShellGoBackButton {
             get {
@@ -198,7 +198,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open or close navigation.
+        ///   Looks up a localized string similar to Nawigasiýany açyň ýa-da ýapyň.
         /// </summary>
         public static string ShellHamburgerButtonName {
             get {
@@ -207,7 +207,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Main.
+        ///   Looks up a localized string similar to Esasy.
         /// </summary>
         public static string ShellMainPage {
             get {
@@ -216,7 +216,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to Sazlamalar.
         /// </summary>
         public static string ShellSettingsPage {
             get {

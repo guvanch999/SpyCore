@@ -52,7 +52,7 @@ namespace SpyCore.Views
                     MD5_textbox.Text = Helpers.Utility.CalculateMD5(filePath);
                     SHA1_textbox.Text = Helpers.Utility.CalculateSHA1(filePath);
                     SHA256_textbox.Text = Helpers.Utility.CalculateSHA256(filePath);
-                    size_textbox.Text = Helpers.Utility.CalculateFileSize(filePath).ToString() + " bytes";
+                    size_textbox.Text = Helpers.Utility.CalculateFileSize(filePath).ToString() + " baýt";
                 }
             }
         }
@@ -123,7 +123,7 @@ namespace SpyCore.Views
                 {
                     new PieSeries
                     {
-                        Title = "Malicious",
+                        Title = "Zyýanly",
                         Values = new ChartValues<double> {malicious},
                         DataLabels = true,
                         LabelPoint = labelPoint,
@@ -131,7 +131,7 @@ namespace SpyCore.Views
                     },
                     new PieSeries
                     {
-                        Title = "Undetected",
+                        Title = "Tapylmadyk",
                         Values = new ChartValues<double> {undetected},
                         DataLabels = true,
                         LabelPoint = labelPoint,
@@ -139,16 +139,16 @@ namespace SpyCore.Views
                     },
                     new PieSeries
                     {
-                        Title = "Unknown",
+                        Title = "Näbelli",
                         Values = new ChartValues<double> {unknown},
                         DataLabels = true,
                         LabelPoint = labelPoint,
                         Fill = System.Windows.Media.Brushes.Gray
                     }
                 };
-                malPercent.Content = "Malicious = " + malicious;
-                safePercent.Content = "Safe = " + undetected;
-                unkPercent.Content = "Unknown = " + unknown;
+                malPercent.Content = "Zyýanly = " + malicious;
+                safePercent.Content = "Ygtybarly = " + undetected;
+                unkPercent.Content = "Näbelli = " + unknown;
                 pieChart1.Series = piechartData;
                 CommunityVotesChart(scanResults.Data.Attributes.TotalVotes.Harmless, scanResults.Data.Attributes.TotalVotes.Malicious);
             }

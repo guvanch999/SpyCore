@@ -86,7 +86,7 @@
                 <TextBlock
                     Margin="{StaticResource XSmallTopMargin}"
                     Style="{StaticResource BodyTextStyle}"
-                    Text="SpyCore scans given files using multiple online sources to determine whether it contains a virus." />
+                    Text="SpyCore, wirusyň bardygyny ýa-da ýokdugyny anyklamak üçin birnäçe onlaýn çeşmeleri ulanyp berlen faýllary gözden geçirýär." />
 
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
@@ -103,7 +103,7 @@
             </StackPanel>
             <Label Content="VirusTotal API Key:" HorizontalAlignment="Left" Margin="39,7,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16"/>
             <TextBox x:Name="apiKey" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="426"/>
-            <Button x:Name="saveKey" Content="Save" HorizontalAlignment="Left" Margin="615,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="saveKey_Click"/>
+            <Button x:Name="saveKey" Content="Ýatda sakla" HorizontalAlignment="Left" Margin="615,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="saveKey_Click"/>
         </Grid>
     </ScrollViewer>
 </Page>

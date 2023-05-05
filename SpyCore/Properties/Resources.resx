@@ -118,46 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ShellSettingsPage" xml:space="preserve">
-    <value>Settings</value>
+    <value>Sazlamalar</value>
   </data>
   <data name="SettingsPageTitle" xml:space="preserve">
-    <value>Settings</value>
+    <value>Sazlamalar</value>
   </data>
   <data name="SettingsPageAboutText" xml:space="preserve">
-    <value>Settings page placeholder text.  Your app description goes here.</value>
+    <value>Sazlamalar sahypasynyň eýesiniň teksti. Programmaňyzyň beýany şu ýere gidýär.</value>
   </data>
   <data name="SettingsPageAboutTitle" xml:space="preserve">
-    <value>About this application</value>
+    <value>Bu programma barada</value>
   </data>
   <data name="SettingsPageChooseThemeText" xml:space="preserve">
-    <value>Choose Theme</value>
+    <value>Tema saýlaň</value>
   </data>
   <data name="SettingsPagePersonalizationTitle" xml:space="preserve">
-    <value>Personalization</value>
+    <value>Şahsylaşdyrma</value>
   </data>
   <data name="SettingsPagePrivacyStatementText" xml:space="preserve">
-    <value>Privacy Statement</value>
+    <value>Gizlinlik Beýannamasy</value>
   </data>
   <data name="SettingsPageRadioButtonDarkTheme" xml:space="preserve">
-    <value>Dark</value>
+    <value>Garaňky</value>
   </data>
   <data name="SettingsPageRadioButtonLightTheme" xml:space="preserve">
-    <value>Light</value>
+    <value>Ýagty</value>
   </data>
   <data name="SettingsPageRadioButtonWindowsDefaultTheme" xml:space="preserve">
-    <value>Default</value>
+    <value>Bellenen</value>
   </data>
   <data name="ShellMainPage" xml:space="preserve">
-    <value>Main</value>
+    <value>Esasy</value>
   </data>
   <data name="MainPageTitle" xml:space="preserve">
-    <value>Main</value>
+    <value>Esasy</value>
   </data>
   <data name="ShellGoBackButton" xml:space="preserve">
-    <value>Go back</value>
+    <value>Yzyňa dolan</value>
   </data>
   <data name="ShellHamburgerButtonName" xml:space="preserve">
-    <value>Open or close navigation</value>
+    <value>Nawigasiýany açyň ýa-da ýapyň</value>
   </data>
   <data name="AppDisplayName" xml:space="preserve">
     <value>SpyCore</value>
@@ -170,6 +170,6 @@
     <value>..\Resources\settings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ShellCommunityPage" xml:space="preserve">
-    <value>Community</value>
+    <value>Bileleşik</value>
   </data>
 </root>

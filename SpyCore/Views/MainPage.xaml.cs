@@ -59,7 +59,7 @@ namespace SpyCore.Views
             }
             catch (Exception e)
             {
-                metroLabel3.Content = "Scan limit - 4 times per minute!";
+                metroLabel3.Content = "Skaneriň çägi - minutda 4 gezek!";
                 Console.Beep();
                 return;
             }
@@ -79,7 +79,7 @@ namespace SpyCore.Views
                     {
                         item = i, 
                         Anti__Virus__Vendor = pair.Key,
-                        Detected__as__Virus = pair.Value ? "Yes" : "No",
+                        Detected__as__Virus = pair.Value ? "Howa" : "Ýok",
                         Date__Of__First__Scan = structure.ScanDate.ToString(),
                         //Threat = Convert.ToString(structure.VirNames)
                     });
@@ -100,7 +100,7 @@ namespace SpyCore.Views
                 }
                 if (YesCount > NoCount)
                 {
-                    metroLabel3.Content = "Virus Found!";
+                    metroLabel3.Content = "Wirus tapyldy!";
                 }
             }
         }
@@ -131,7 +131,7 @@ namespace SpyCore.Views
             }
             catch (Exception e)
             {
-                metroLabel3.Content = "Scan limit - 4 times per minute!";
+                metroLabel3.Content = "Skaneriň çägi - minutda 4 gezek!";
                 return;
             }
             ReportStructure structure = null;
@@ -144,7 +144,6 @@ namespace SpyCore.Views
                 int i = 0;
                 int o = -1;
                 List<sResults> RES = new List<sResults>();
-                List<tMap> RES2 = new List<tMap>();
                 foreach (KeyValuePair<string, bool> pair in structure.ScanResults)
                 {
                     o = o + 1;
@@ -152,7 +151,7 @@ namespace SpyCore.Views
                     {
                         item = i++,
                         Anti__Virus__Vendor = pair.Key,
-                        Detected__as__Virus = pair.Value ? "Yes" : "No",
+                        Detected__as__Virus = pair.Value ? "Howa" : "Ýok",
                         Date__Of__First__Scan = structure.ScanDate.ToString(),
                         Threat = structure.VirNames[o]
                     });
@@ -170,11 +169,11 @@ namespace SpyCore.Views
                     {   NoCount++;  }
                 }
                 if ((YesCount < 19) && (YesCount > 0))
-                {   metroLabel3.Content = "Potential Virus Found!"; }
+                {   metroLabel3.Content = "Potensial wirus tapyldy!"; }
                 else if (YesCount > 19)
-                {   metroLabel3.Content = "Virus Found!"; }
+                {   metroLabel3.Content = "Wirus tapyldy!"; }
                 else if (YesCount == 0)
-                {   metroLabel3.Content = "File is Clean!"; }
+                {   metroLabel3.Content = "Faýl arassa!"; }
             }
 
         }
@@ -189,13 +188,13 @@ namespace SpyCore.Views
             bool hasFileBeenScannedBefore = report.ResponseCode == FileReportResponseCode.Present;
             if (hasFileBeenScannedBefore)
             {
-                metroLabel3.Content = "Successfully Scanned.";
+                metroLabel3.Content = "Üstünlikli skaner edildi.";
                 return report;
             }
             else
             {
                 ScanResult fileResult = await virusTotal.ScanFileAsync(bytes, "Eicar.txt");
-                metroLabel3.Content = "Scanning is in progress. Wait approximately 2 minutes and scan again!";
+                metroLabel3.Content = "Skaner dowam edýär. Takmynan 2 minut garaşyň we gaýtadan gözden geçiriň!";
                 report = null;
                 return report;
             }
@@ -221,7 +220,7 @@ namespace SpyCore.Views
             }
             else
             {
-                metroLabel3.Content = "Successfully Scanned.";
+                metroLabel3.Content = "Üstünlikli skaner edildi.";
                 button1.IsEnabled = true;
                 return fileReport;
             }
@@ -230,7 +229,7 @@ namespace SpyCore.Views
         private void scanTimer_Tick(object sender, EventArgs e)
         {
             int sCount = 0;
-            metroLabel3.Content = "Scanning is in progress. Results should be ready in " + WaitTime + " seconds";
+            metroLabel3.Content = "Skaner dowam edýär. Netijeler " + WaitTime + " sekuntda taýýar bolmaly";
             WaitTime = WaitTime - 1;
             if (sCount == WaitTime)
             {
@@ -258,17 +257,17 @@ namespace SpyCore.Views
         {
             if (string.IsNullOrEmpty(fileLocation.Text) || string.IsNullOrEmpty(fileLocation.Text))
             {
-                metroLabel3.Content = "file path cannot be empty!";
+                metroLabel3.Content = "faýl ýoly boş bolup bilmez!";
                 return;
             }
             if (!File.Exists(fileLocation.Text))
             {
-                metroLabel3.Content = "Specified file does not exist!";
+                metroLabel3.Content = "Görkezilen faýl ýok!";
                 return;
             }
             if (!CheckInternetConnection())
             {
-                metroLabel3.Content = "No Connection!";
+                metroLabel3.Content = "Internet baglanyşyk Tapylmady!";
                 return;
             }
             DoLogicAsync(fileLocation.Text);
