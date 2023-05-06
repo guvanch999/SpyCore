@@ -61,7 +61,7 @@ namespace SpyCore.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpyCore.
+        ///   Looks up a localized string similar to Ynamly Gadam.
         /// </summary>
         public static string AppDisplayName {
             get {

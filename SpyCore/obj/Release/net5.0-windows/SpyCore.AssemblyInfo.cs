@@ -11,11 +11,14 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SpyCore")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("7heDeadBunnyCollective")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("7DBC")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Multi-Sourced file scanner, using various different online resources for classifi" +
+    "cation - such as VirusTotal and Intezer-Protect")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("SpyCore")]
+[assembly: System.Reflection.AssemblyProductAttribute("SpyCore File Scanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpyCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]

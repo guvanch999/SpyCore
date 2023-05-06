@@ -24,7 +24,7 @@
         <TextBlock
             Style="{StaticResource PageTitleStyle}"
             Margin="24,0,0,0"
-            Text="SpyCore" Grid.ColumnSpan="2" Height="30" />
+            Text="Ynamly Gadam" Grid.ColumnSpan="2" Height="30" />
         <Grid
             Grid.Row="1"
             Margin="24,0,24,0"

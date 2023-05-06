@@ -47,7 +47,7 @@ namespace SpyCore {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.3.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.4.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -71,7 +71,7 @@ namespace SpyCore {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/SpyCore;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SpyCore;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -85,7 +85,7 @@ namespace SpyCore {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.3.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.4.0")]
         public static void Main() {
             SpyCore.App app = new SpyCore.App();
             app.InitializeComponent();

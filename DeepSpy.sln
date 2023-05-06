@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpyCore", "SpyCore\SpyCore.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpyCore.Core", "SpyCore.Core\SpyCore.Core.csproj", "{F241C950-E0F6-4339-93CF-C78E5AD44656}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{7DC01BB8-CCB5-4234-A261-7A7789F889B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,16 @@ Global
 		{F241C950-E0F6-4339-93CF-C78E5AD44656}.Release|x64.Build.0 = Release|Any CPU
 		{F241C950-E0F6-4339-93CF-C78E5AD44656}.Release|x86.ActiveCfg = Release|Any CPU
 		{F241C950-E0F6-4339-93CF-C78E5AD44656}.Release|x86.Build.0 = Release|Any CPU
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Debug|Any CPU.ActiveCfg = Debug
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Debug|ARM.ActiveCfg = Debug
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Debug|ARM64.ActiveCfg = Debug
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Debug|x64.ActiveCfg = Debug
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Debug|x86.ActiveCfg = Debug
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Release|Any CPU.ActiveCfg = Release
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Release|ARM.ActiveCfg = Release
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Release|ARM64.ActiveCfg = Release
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Release|x64.ActiveCfg = Release
+		{7DC01BB8-CCB5-4234-A261-7A7789F889B9}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

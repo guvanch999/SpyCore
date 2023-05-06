@@ -86,20 +86,13 @@
                 <TextBlock
                     Margin="{StaticResource XSmallTopMargin}"
                     Style="{StaticResource BodyTextStyle}"
-                    Text="SpyCore, wirusyň bardygyny ýa-da ýokdugyny anyklamak üçin birnäçe onlaýn çeşmeleri ulanyp berlen faýllary gözden geçirýär." />
+                    Text="Ynamly Gadam, wirusyň bardygyny ýa-da ýokdugyny anyklamak üçin birnäçe onlaýn çeşmeleri ulanyp berlen faýllary gözden geçirýär." />
 
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
-                    AutomationProperties.Name="{Binding Text, ElementName=settingsPrivacyStatement}">
-                    <Hyperlink
-                        Command="{Binding PrivacyStatementCommand}"
-                        AutomationProperties.Name="{Binding Text, ElementName=settingsPrivacyStatement}">
-                        <TextBlock
-                            x:Name="settingsPrivacyStatement"
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="{x:Static properties:Resources.SettingsPagePrivacyStatementText}" />
-                    </Hyperlink>
-                </TextBlock>
+                    AutomationProperties.Name="{Binding Text, ElementName=settingsPrivacyStatement}"><Run Language="tk-tm" Text="Taýýarlan:  Annamuradowa Nursoltan"/></TextBlock>
+                <TextBlock
+                    Style="{StaticResource BodyTextStyle}" />
             </StackPanel>
             <Label Content="VirusTotal API Key:" HorizontalAlignment="Left" Margin="39,7,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16"/>
             <TextBox x:Name="apiKey" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="426"/>
